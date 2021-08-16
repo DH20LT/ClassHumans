@@ -9,7 +9,11 @@ namespace Humans
     class NhanVien:Nguoi
     {   
         string BangCap;
+        public string getBangCap(){return this.BangCap;}
+        public void setBangCap(string s){this.BangCap=s;}
         string ChucVu;
+        public string getChucVu(){return this.ChucVu;}
+        public void setChucVu(string s){this.ChucVu=s;}
         public NhanVien() : base()
         {
             this.BangCap = "";
@@ -29,6 +33,12 @@ namespace Humans
             BangCap = Console.ReadLine();
             Console.WriteLine("ChucVu la: ");
             ChucVu = Console.ReadLine();
+        }
+        public void XuatThongTin()
+        {
+            base.XuatThongTin();
+            Console.WriteLine("BangCap la: " + this.getBangCap());
+            Console.WriteLine("ChucVu la: " + this.getChucVu());
         }
         void CapNhatBangCap()
         {
