@@ -32,6 +32,7 @@ namespace Humans
             this.NganhHoc = NganhHoc;
             this.DiemTB = DiemTB;
         }
+
         public void NhapThongTin()
         {
             base.NhapThongTin();
@@ -50,9 +51,10 @@ namespace Humans
             Console.WriteLine("DiemTB la: " + DiemTB);
         }
 
-        public void TangDiemTB()
+        public void TangDiemTB(int DiemTang)
         {
-
+            if(DiemTang>0 && DiemTB<1) // chỉ được tăng ít hơn một điểm
+            DiemTB += DiemTang;
         }
     }
 }
