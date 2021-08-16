@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
 
 namespace Humans
 {
@@ -33,7 +31,7 @@ namespace Humans
             this.DiemTB = DiemTB;
         }
 
-        public void NhapThongTin()
+        public override void NhapThongTin()
         {
             base.NhapThongTin();
             Console.WriteLine("CMND la: ");
@@ -43,7 +41,7 @@ namespace Humans
             Console.WriteLine("CMND la: ");
             DiemTB = float.Parse(Console.ReadLine());
         }
-        public void XuatThongTin()
+        public override void XuatThongTin()
         {
             base.XuatThongTin();
             Console.WriteLine("Lop la: " + Lop);

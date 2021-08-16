@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections;
 using System.Threading.Tasks;
 
 namespace Humans
@@ -26,7 +27,7 @@ namespace Humans
             this.BangCap = BangCap;
             this.ChucVu = ChucVu;
         }
-        public void NhapThongTin()
+        public override void NhapThongTin()
         {
             base.NhapThongTin();
             Console.WriteLine("BangCap la: ");
@@ -34,7 +35,7 @@ namespace Humans
             Console.WriteLine("ChucVu la: ");
             ChucVu = Console.ReadLine();
         }
-        public void XuatThongTin()
+        public override void XuatThongTin()
         {
             base.XuatThongTin();
             Console.WriteLine("BangCap la: " + this.getBangCap());

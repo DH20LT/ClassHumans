@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
 
 namespace Humans
 {
@@ -39,7 +37,7 @@ namespace Humans
             this.GioiTinh = GioiTinh;
             this.DiaChi = DiaChi;
         }
-        public void NhapThongTin()
+        public virtual void NhapThongTin()
         {
             Console.WriteLine("CMND la: ");
             CMND = Console.ReadLine();
@@ -52,7 +50,7 @@ namespace Humans
             Console.WriteLine("DiaChi la: ");
             DiaChi = Console.ReadLine();
         }
-        public void XuatThongTin()
+        public virtual void XuatThongTin()
         {
             Console.WriteLine("CMND la: " + CMND);
             Console.WriteLine("Ten la: " + Ten);

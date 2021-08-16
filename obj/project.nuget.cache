@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NG9oVjTI2rCvn4N75b8ZqoWnbioFEABtA2ekS7AyvgTea+vUgzrgXP4nNW9YsqXTXsAcSSVa2jDzn0ycrlcM3g==",
+  "dgSpecHash": "coz7CAwmcW7Ac2DQRi5RxvHvou4APMh5Fnxoe5VJJDF7+xbXF7dLUeAe7N8sBOjzPx+HJL/sqDyj/X0LyqqGcQ==",
   "success": true,
-  "projectFilePath": "D:\\TaQuangKhoi\\GitHub\\SendToTeacher\\ClassHumans\\Humans.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\GitHub\\SendToTeacher\\ClassHumans\\Humans.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\taqua\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.8\\microsoft.netcore.app.host.win-x64.5.0.8.nupkg.sha512"
+  ],
   "logs": []
 }
