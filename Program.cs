@@ -13,6 +13,7 @@ namespace Humans
             Console.WriteLine("1. Thêm đối tượng Nguoi");
             Console.WriteLine("2. Thêm đối tượng NhanVien");
             Console.WriteLine("3. Thêm đối tượng SinhVien");
+            Console.WriteLine("4. Hiện tất cả đối tượng");
             Console.WriteLine("0. Thoát Chương Trình");
             Console.WriteLine("Chọn Chức năng");
             int iChucNang = int.Parse(Console.ReadLine());
@@ -48,11 +49,37 @@ namespace Humans
                     case 4:{
                         //Hiện thị danh sách đối tượng
                         Console.WriteLine("Danh sách đối tượng");
-                        foreach (var item in arrHuman)
-                        {
-                            Console.WriteLine(item.ToString());
+                        for(int i = 0; i < arrHuman.Count; i++){
+                            Nguoi nguoi = new Nguoi();
+                            NhanVien nhanVien = new NhanVien();
+                            SinhVien sinhVien = new SinhVien();
+
+                            Type ia = arrHuman[i].GetType();
+                            Type iNguoi = nguoi.GetType();
+                            Type iNhanVien = nhanVien.GetType();
+                            Type iSinhVien = sinhVien.GetType();
+                            if (ia.Equals(iNguoi))
+                            {
+                                nguoi = (Nguoi)arrHuman[i];
+                                Console.WriteLine("=====================================");
+                                nguoi.XuatThongTin();
+                                Console.WriteLine("=====================================");
+                            }
+                            else if(ia.Equals(iNhanVien))
+                            {
+                                nhanVien = (NhanVien)arrHuman[i];
+                                Console.WriteLine("=====================================");
+                                nhanVien.XuatThongTin();
+                                Console.WriteLine("=====================================");
+                            }
+                            else if(ia.Equals(iSinhVien))
+                            {
+                                sinhVien = (SinhVien)arrHuman[i];
+                                Console.WriteLine("=====================================");
+                                sinhVien.XuatThongTin();
+                                Console.WriteLine("=====================================");
+                            }
                         }
-                            Console.ReadLine();
                         Program.Programming(arrHuman);
                         break;
                     }

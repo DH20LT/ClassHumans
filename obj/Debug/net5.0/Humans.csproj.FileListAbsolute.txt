@@ -45,4 +45,4 @@ D:\GitHub\SendToTeacher\ClassHumans\obj\Debug\net5.0\Humans.dll
 D:\GitHub\SendToTeacher\ClassHumans\obj\Debug\net5.0\Humans.pdb
 D:\GitHub\SendToTeacher\ClassHumans\obj\Debug\net5.0\Humans.genruntimeconfig.cache
 D:\GitHub\SendToTeacher\ClassHumans\obj\Debug\net5.0\ref\Humans.dll
-D:\GitHub\SendToTeacher\ClassHumans\bin\Debug\net5.0\ref\Humans.dll
+D:\GitHub\SendToTeacher\ClassHumans\obj\Debug\net5.0\refint\Humans.dll
