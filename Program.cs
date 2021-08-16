@@ -8,13 +8,15 @@ namespace Humans
     class Program
     {
         static void Programming(ArrayList arrHuman){
+            Console.Clear();
+            Console.WriteLine("Quản Lý Con Người");
+            Console.WriteLine("1. Thêm đối tượng Nguoi");
+            Console.WriteLine("2. Thêm đối tượng NhanVien");
+            Console.WriteLine("3. Thêm đối tượng SinhVien");
+            Console.WriteLine("0. Thoát Chương Trình");
+            Console.WriteLine("Chọn Chức năng");
             int iChucNang = int.Parse(Console.ReadLine());
             do{
-                Console.WriteLine("Quản Lý Con Người");
-                Console.WriteLine("1. Thêm đối tượng Nguoi");
-                Console.WriteLine("2. Thêm đối tượng NhanVien");
-                Console.WriteLine("3. Thêm đối tượng SinhVien");
-                Console.WriteLine("0. Thoát Chương Trình");
                 switch (iChucNang){
                     case 0:{ // Thoát Chương Trình
                         Environment.Exit(0);
@@ -24,6 +26,7 @@ namespace Humans
                         Nguoi nguoi = new Nguoi();
                         nguoi.NhapThongTin();
                         arrHuman.Add(nguoi);
+                        Program.Programming(arrHuman);
                         break;
                     }
                     case 2: {
@@ -31,6 +34,7 @@ namespace Humans
                         NhanVien nhanVien = new NhanVien();
                         nhanVien.NhapThongTin();
                         arrHuman.Add(nhanVien);
+                        Program.Programming(arrHuman);
                         break;
                     }
                     case 3: { 
@@ -38,6 +42,7 @@ namespace Humans
                         SinhVien sinhVien = new SinhVien();
                         sinhVien.NhapThongTin();
                         arrHuman.Add(sinhVien);
+                        Program.Programming(arrHuman);
                         break;
                     }
                     case 4:{
@@ -47,10 +52,12 @@ namespace Humans
                         {
                             Console.WriteLine(item.ToString());
                         }
+                            Console.ReadLine();
+                        Program.Programming(arrHuman);
                         break;
                     }
                 }
-            }while(iChucNang > 0);
+            }while(true);
 
         }
         static void Main(string[] args)
