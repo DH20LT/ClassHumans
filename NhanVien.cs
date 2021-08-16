@@ -40,13 +40,13 @@ namespace Humans
             Console.WriteLine("BangCap la: " + this.getBangCap());
             Console.WriteLine("ChucVu la: " + this.getChucVu());
         }
-        void CapNhatBangCap()
+        void CapNhatBangCap(string BangCapMoi)
         {
-
+            this.setBangCap(BangCapMoi);
         }
-        void ThayDoiChucVu()
+        void ThayDoiChucVu(string ChucVuMoi)
         {
-
+            this.ChucVu = ChucVuMoi;
         }
     }
 }
