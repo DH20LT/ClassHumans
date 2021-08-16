@@ -9,8 +9,14 @@ namespace Humans
     class SinhVien:Nguoi
     {
         string Lop;
+        public string getLop(){return Lop;}
+        public void setLop(string lop){Lop=lop;}
         string NganhHoc;
+        public string getNganhHoc(){return NganhHoc;}
+        public void setNganhHoc(string nganhHoc){NganhHoc=nganhHoc;}
         float DiemTB;
+        public float getDiemTB(){return DiemTB;}
+        public void setDiemTB(float diemTB){DiemTB=diemTB;}
         public SinhVien() : base()
         {
             this.Lop = "";
