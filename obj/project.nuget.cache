@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BtMeLEY/QvoZiVmdP8zH7lqkvAVdEdWIZdzBWdkifuRo8IVd7fc8VuCk/B+pDQcq0Xxc/16Cwv8/q4BU4cdnwQ==",
+  "dgSpecHash": "coz7CAwmcW7Ac2DQRi5RxvHvou4APMh5Fnxoe5VJJDF7+xbXF7dLUeAe7N8sBOjzPx+HJL/sqDyj/X0LyqqGcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\taqua\\OneDrive\\Programming Project\\C-Sharp\\Humans\\Humans.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\GitHub\\SendToTeacher\\ClassHumans\\Humans.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\taqua\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.8\\microsoft.netcore.app.host.win-x64.5.0.8.nupkg.sha512"
+  ],
   "logs": []
 }

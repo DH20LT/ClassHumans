@@ -1,15 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
 
 namespace Humans
 {
     class NhanVien:Nguoi
     {   
         string BangCap;
+        public string getBangCap(){return this.BangCap;}
+        public void setBangCap(string s){this.BangCap=s;}
         string ChucVu;
+        public string getChucVu(){return this.ChucVu;}
+        public void setChucVu(string s){this.ChucVu=s;}
         public NhanVien() : base()
         {
             this.BangCap = "";
@@ -22,7 +25,7 @@ namespace Humans
             this.BangCap = BangCap;
             this.ChucVu = ChucVu;
         }
-        public void NhapThongTin()
+        public override void NhapThongTin()
         {
             base.NhapThongTin();
             Console.WriteLine("BangCap la: ");
@@ -30,13 +33,19 @@ namespace Humans
             Console.WriteLine("ChucVu la: ");
             ChucVu = Console.ReadLine();
         }
-        void CapNhatBangCap()
+        public override void XuatThongTin()
         {
-
+            base.XuatThongTin();
+            Console.WriteLine("BangCap la: " + this.getBangCap());
+            Console.WriteLine("ChucVu la: " + this.getChucVu());
         }
-        void ThayDoiChucVu()
+        void CapNhatBangCap(string BangCapMoi)
         {
-
+            this.setBangCap(BangCapMoi);
+        }
+        void ThayDoiChucVu(string ChucVuMoi)
+        {
+            this.ChucVu = ChucVuMoi;
         }
     }
 }
